@@ -1,0 +1,106 @@
+*,
+ html,
+ body {
+    margin: 0;
+    padding: 0;
+    font-family: "Playfair Display", serif;
+ }
+
+:root {
+    --bg-primary: #2f36f9 ;
+    --bg-secondary: #f9f9f9;
+    --txt-primary: #f7f7f7f7;
+    --txt-secondary: #222222;
+    --icons-bg-primary: tomato ;
+    --icons-bg-secondary: #0533ff;
+}
+
+.container {
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    background-color: var(--bg-primary);
+}
+
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 40%;
+    border: 1px solid white;
+    background-color: var(--bg-secondary);
+    color: var(--txt-secondary);
+    padding: 32px;
+    margin: 8px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.text-center {
+    text-align: center;
+    border: 2px solid white;
+}
+
+.title {
+    font-size: 2em;
+}
+
+.icons {
+    margin-top: 8px;
+    margin-bottom: 2px;
+    font-size: 24px;
+    color: var(--icons-bg-secondary)
+}
+
+.description {
+    margin-top: 8px;
+    font-size: 1em;
+}
+
+.btn {
+    margin-top: 10px;
+    padding: 8px;
+    cursor: pointer;
+    border: none;
+    width: 100%;
+}
+
+.btn:hover {
+    background-color: var(--bg-primary);
+    color: var(--txt-primary);
+    transform: rotate(2deg);
+    -webkit-transform: rotate(2deg);
+    -moz-transform: rotate(2deg);
+    -ms-transform: rotate(2deg);
+    -o-transform: rotate(2deg);
+    transition: .7s ease-in-out;
+    -webkit-transition: .7s ease-in-out;
+    -moz-transition: .7s ease-in-out;
+    -ms-transition: .7s ease-in-out;
+    -o-transition: .7s ease-in-out;
+}
+
+@media  screen and (max-width: 476px) {
+    .container {
+        background-color: white;
+    }
+    .card {
+        width: 95%;
+    }
+    .title {
+        font-size: 2em;
+    }
+    .icons {
+        font-size: 2em;
+    }
+    .description {
+        font-size: 1em;
+    }
+    .btn {
+        padding: 16px;
+        font-size: 1em;
+    }
+}

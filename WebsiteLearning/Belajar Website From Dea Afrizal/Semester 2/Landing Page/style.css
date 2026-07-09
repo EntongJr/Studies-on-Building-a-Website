@@ -1,0 +1,26 @@
+*,
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url('item.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.putih {
+    background: red;
+    color: rgb(80, 238, 175);
+}
+
+.hijau {
+    background-color: blue;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
