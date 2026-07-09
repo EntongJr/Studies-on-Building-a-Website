@@ -1,0 +1,3 @@
+<?php
+
+echo "HAI AKU BELAJAR PHP PERTAMA KALI";
