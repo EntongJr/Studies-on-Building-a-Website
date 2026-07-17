@@ -1,0 +1,10 @@
+5,PotatoMine,25
+2,Sunflower,50
+1,Peashooter,100
+4,Wallnut,75
+10,Torchwood,250
+7,Chomper,125
+6,SnowPea,175
+8,Repeater,200
+11,Magnet,50
+12,Jalapeno,150
