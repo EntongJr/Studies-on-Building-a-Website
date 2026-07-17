@@ -1,0 +1,76 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar CSS</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 14px;
+            background-color: #6699CC;
+            padding: 30px;
+        }
+
+        /* KOTAK BAYANGAN */
+        .kotak-bayangan {
+            width: 100px;
+            height: 100px;
+            background-color: white;
+            box-shadow: 0 0 10px 4px rgba(0,0,0,0.4),
+                        0 0 25px 8px rgba(0,0,0,0.2);
+            margin-bottom: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            font-size: 12px;
+        }
+
+        /* KOTAK MELENGKUNG */
+        .kotak-melengkung {
+            width: 100px;
+            height: 100px;
+            background-color: white;
+            border-radius: 30px;
+            margin-bottom: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            font-size: 12px;
+        }
+
+        /* KOTAK BERBORDER - animasi kelap kelip hijau ke biru */
+        @keyframes borderKelipKelip {
+            0%   { border-color: #00ff00; box-shadow: 0 0 8px #00ff00; }
+            25%  { border-color: #00cc44; box-shadow: 0 0 8px #00cc44; }
+            50%  { border-color: #0066ff; box-shadow: 0 0 8px #0066ff; }
+            75%  { border-color: #00cc44; box-shadow: 0 0 8px #00cc44; }
+            100% { border-color: #00ff00; box-shadow: 0 0 8px #00ff00; }
+        }
+
+        .kotak-berborder {
+            width: 80px;
+            height: 80px;
+            background-color: #003399;
+            border: 6px solid #00ff00;
+            outline: 4px solid #0055cc;
+            padding: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            font-size: 11px;
+            color: white;
+            animation: borderKelipKelip 1s infinite;
+        }
+    </style>
+</head>
+<body>
+    <h1>Belajar CSS</h1>
+    <hr>
+    <div class="kotak-bayangan">Div ini ada bayangannya</div>
+    <div class="kotak-melengkung">Div ini melengkung</div>
+    <div class="kotak-berborder">Div ini bordernya banyak</div>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pendaftaran</title>
+</head>
+<body>
+    <form id="formulir" action="info.php" method="post">
+        <fieldset>
+            <legend>Form Pendaftaran:</legend>
+            <p>
+                <label>Nama:</label>
+                <input type="text" name="nama" placeholder="Masukkan Nama"/>
+            </p>
+            <p>
+                <label>Gender:</label>
+                <input type="radio" name="gender" value="male"/>male
+                <input type="radio" name="gender" value="female"/>Female
+            </p>
+            <p>
+                <label>E-Mail:</label>
+                <input type="email" name="email" placeholder="Masukkan Email"/>
+            </p>
+            <p>
+                <label>Alamat : </label>
+                <textarea name="alamat"></textarea>
+            </p>
+            <p>
+                <label>Tanggal Lahir: </label>
+                <input type="data" name="thl-lahir" />
+            </p>
+            <p>
+                <input type="submit" value="kirim"/>
+            </p>
+        </fieldset>
+    </form>
+</body>
+</html>
